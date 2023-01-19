@@ -1,0 +1,224 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    max-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 30px;
+}
+
+.card-container {
+    position: relative;
+    width: 350px;
+    height: 450px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 3px 3px 10px black;
+    transition: box-shadow .3s ;
+  
+ 
+}
+
+.card-container:hover  .save{
+    box-shadow: 5px 5px 10px black;
+    opacity: 1;
+    transform: translateY(0);
+    
+}
+    
+
+
+.card-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.card-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    background-color: black;
+    opacity: 0;
+    transition: opacity .3s;
+}
+
+.card-container:hover::before{
+    opacity: 0.3;
+}
+
+.save {
+    z-index: 3;
+    position: absolute;
+    background-color: rgb(109, 15, 15, 0.5);
+    padding: 15px;
+    border-radius: 30px;
+    right: 15px;
+    top: 15px;
+    font-weight: bold;
+    color: white;
+    opacity: 0;
+    cursor: pointer;
+    transform: translateY(-100px);
+    transition: transform .3s, opacity 1s;
+    transition-timing-function: ease-in;
+}
+
+
+.barra {
+    position: absolute;
+    display: absolute;
+    background-color: rgb(249, 244, 243, 0.5);
+    left: 15px;
+    height: 50px;
+    width: 160px;
+    bottom: 15px;
+    border-radius: 40px;
+    text-align: center;
+    z-index: 3;
+    opacity: 1;
+    cursor: pointer;
+    transform: translateY(200px);
+    transition: transform .3s, opacity 1s;
+    transition-timing-function: ease-in;
+}
+
+.barra i {
+    position: absolute;
+    color: black;
+    text-align: start;
+    top: 25%;
+    left: 8%;
+}
+
+.icone span {
+    position: absolute;
+    color: black;
+    text-align: start;
+    top: 25%;
+    left: 20%;
+    font-size: 80%;
+}
+
+.arrow-up{
+    display: inline-block;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(249, 244, 243, 0.5);
+    z-index: 3;
+    box-sizing: 2px;
+    line-height: 100%;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 15px;
+    left: 230px;
+    cursor: pointer;
+    opacity: 1;
+    transform:translateY(200px);
+    transition: opacity.2s, transform.2s;
+    transition-timing-function: ease-in;
+
+}
+
+.arrow-up i{
+    position: absolute;
+    width: 30px;
+    height: 30px; 
+    top: 60%;
+    left: 65%;
+    margin: -15px 0 0 -15px;
+}
+
+
+.puntini {
+    display: inline-block;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(249, 244, 243, 0.5);
+    z-index: 3;
+    box-sizing: 2px;
+    line-height: 100%;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 15px;
+    left: 290px;
+    cursor: pointer;
+    transform: translateY(200px);
+    transition: opacity.2s, transform.2s;
+    transition-timing-function: ease-in;
+    
+}
+
+.puntini i {
+    position: absolute;
+    width: 30px;
+    height: 30px; 
+    top: 60%;
+    left: 65%;
+    margin: -15px 0 0 -15px;
+}
+
+
+.icone::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    background-color: black;
+    opacity: 0;
+    transition: opacity .3s;
+}
+
+.icone:hover .barra{
+    box-shadow: 5px 5px 10px black;
+    opacity: 1;
+    transform: translateY(0);
+   
+}
+
+.icone:hover .arrow-up {
+    box-shadow: 5px 5px 10px black;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.icone:hover .puntini {
+    box-shadow: 5px 5px 10px black;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.barra:hover {
+    background-color:rgb(249, 244, 243, 0.8) ;
+}
+
+.puntini:hover{
+    background-color:rgb(249, 244, 243, 0.8) ;
+}
+
+.arrow-up:hover{
+    background-color:rgb(249, 244, 243, 0.8) ;
+}
+
+.save:hover{
+    background-color:  rgb(109, 15, 15, 1);
+}

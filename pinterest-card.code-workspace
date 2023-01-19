@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"name": "pinterest-card",
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.port": 5501
+	}
+}
