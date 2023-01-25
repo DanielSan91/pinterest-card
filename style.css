@@ -71,7 +71,7 @@ body {
     top: 15px;
     font-weight: bold;
     color: white;
-    opacity: 0;
+    opacity: 1;
     cursor: pointer;
     transform: translateY(-100px);
     transition: transform .3s, opacity 1s;
